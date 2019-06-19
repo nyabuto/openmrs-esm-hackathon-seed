@@ -1,7 +1,17 @@
 import React from "react";
+import VisitsParcel from "./visitsParcel";
+import { BrowserRouter } from "react-router-dom";
 
 export default function Root(props: RootProps) {
-  return <div className="test">Hackathon seed is working!</div>;
+  return (
+    <BrowserRouter basename="/openmrs/spa">
+      <div>
+        <VisitsParcel patientUuid={props.patientUuid} />
+      </div>
+    </BrowserRouter>
+  );
 }
 
-type RootProps = {};
+type RootProps = {
+  patientUuid: string;
+};
