@@ -1,12 +1,18 @@
 import React from "react";
-import VisitsParcel from "./visitsParcel";
+import LatestObs from "./patient_info/latest_obs";
+import VisitParcel from "./visitsParcel";
 import { BrowserRouter } from "react-router-dom";
 
 export default function Root(props: RootProps) {
   return (
     <BrowserRouter basename="/openmrs/spa">
       <div>
-        <VisitsParcel patientUuid={props.patientUuid} />
+        <div>
+          <VisitParcel patientUuid={props.patientUuid} />
+        </div>
+        <div>
+          <LatestObs patientUuid={props.patientUuid} />
+        </div>
       </div>
     </BrowserRouter>
   );
