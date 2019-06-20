@@ -18,21 +18,19 @@ function LatestObs(props: LatestObsProps) {
     "1650AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA," +
     "159947AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA," +
     "5085AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA,";
-  var sectionHeaderStyle = {
+  const sectionHeaderStyle = {
     color: "#ea2234",
-    fontWeight: "bold",
+    fontWeight: 900,
     fontSize: "22px",
-    textAlign: "center",
     textDecoration: "underline"
   };
-  var obsHeaderStyle = {
+  const obsHeaderStyle = {
     color: "#068ba5",
-    fontWeight: "bold",
+    fontWeight: 600,
     fontSize: "18px",
-    float: "left",
     marginRight: "10px"
   };
-  var obsBodyStyle = {
+  const obsBodyStyle = {
     color: "#3f4d4f",
     fontSize: "16px",
     marginLeft: "10px",
